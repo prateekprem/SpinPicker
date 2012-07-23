@@ -1,0 +1,119 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf360
+{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red92\green38\blue153;\red63\green110\blue116;\red118\green15\blue80;
+\red0\green0\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww9000\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\ql\qnatural
+
+\f0\fs24 \cf0 -(void)reloadSpinningWheel;\
+reload Function of UITableView, reloadSpinningWheel has same functionality\'a0 of PPSpinWheelView control (call it after set delegate and datasource.) must call.\
+\
+\
+There are different DataSource Methods:-\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0 -(NSInteger) noOfComponentsInPPSpinWheel:(PPSpinWheelView*)ppSpinWheelView;\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \{\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 return noOfComponentYouWant;\
+\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 \}\
+\
+\pard\tx866\pardeftab866\ql\qnatural\pardirnatural
+
+\f1\fs36 \cf0 \CocoaLigature0 -(\cf2 NSTimeInterval\cf0 )PPSpinWheelView:(\cf3 PPSpinWheelView\cf0  *)ppSpinWheelView spinDurationForComponent:(\cf2 NSInteger\cf0 )section\
+\{\
+    \cf4 if\cf0 (section == \cf5 0\cf0 )//To control speed\
+        \cf4 return\cf0  \cf5 30\cf0 ;\
+    \cf4 else\cf0  \
+        \cf4 return\cf0  \cf5 20\cf0 ;\
+\}
+\f0\fs24 \CocoaLigature1 \
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+-(NSInteger)PPSpinWheelView:(PPSpinWheelView*)ppSpinWheelView noOfRowsInComponent:(NSInteger)section;\
+\{\
+\'a0\'a0\'a0 // if you have same images for all components\
+\'a0\'a0\'a0\'a0 return\'a0 [dataSourceArrayOfImages count];\
+\
+\'a0\'a0\'a0 //if you have different images of different component.\
+\'a0\'a0\'a0\'a0 if(section == 0 )//\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 return [dataSourceArrayForSection0 count];\
+\'a0\'a0\'a0\'a0 if(section == 1 )//\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 return [dataSourceArrayForSection1 count];\
+\'a0\'a0\'a0 if(section == 2 || section == 3 )//\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 return [dataSourceArrayForSection2and3 count];\
+\
+\}\
+\
+\
+Delegate Methods:\
+\
+//return imageView for every row for every component.\
+-(UIView*)PPSpinWheelView:(PPSpinWheelView*)ppSpinWheelView viewForRowAtIndexPath:(NSIndexPath*)indexPath;\
+\{\
+\'a0\'a0\'a0\'a0\'a0 NSString *imageName ;\
+\'a0\'a0\'a0\'a0\'a0 // if you have same images for all components\
+\'a0\'a0\'a0\'a0 imageName =\'a0 [dataSourceArrayOfImages objectAtIndex:indexPath.row];//imageName for specific row;\
+\
+\'a0\'a0\'a0\'a0 // If you have different images for different component\
+\'a0\'a0\'a0 if(section == 0 )//\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 imageName =\'a0 [dataSourceArrayForSection0 objectAtIndex:indexPath.row];//image for specific row for component0;\
+\'a0\'a0\'a0\'a0 if(section == 1 )//\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 imageName =\'a0 [dataSourceArrayForSection1 objectAtIndex:indexPath.row];//image for specific row for component1;\
+\'a0\'a0\'a0 if(section == 2 || section == 3 )//\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 imageName =\'a0 [dataSourceArrayForSection2and3 objectAtIndex:indexPath.row];//image for specific row for component2and3;\
+\
+\'a0\'a0\'a0\'a0\'a0 // To create imageView For imafeName.\
+\'a0\'a0\'a0\'a0\'a0 UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"%@",imageName ] autorelease];\
+\'a0\'a0\'a0\'a0 \
+\'a0\'a0\'a0\'a0\'a0 retturn imageView;\
+\}\
+\
+// The method automatically called when component stop moving. for each comonent it call if you have 3 components it //calls 3 times.\
+-(void)spinEndedWithIndexPath:(NSIndexPath *)indexPath\
+\{\
+\
+\'a0\'a0\'a0\'a0 // When a component ended spin you can get component no as (indexPath.section) and row as (indexPath.row)\
+\'a0\'a0\'a0\'a0 //you can get your image as\
+\'a0\'a0\'a0 NSString *imageName ;\
+\'a0\'a0\'a0\'a0\'a0 // if you have same images for all components\
+\'a0\'a0\'a0\'a0 imageName =\'a0 [dataSourceArrayOfImages objectAtIndex:indexPath.row];//imageName for specific row;\
+\
+\'a0\'a0\'a0\'a0 // If you have different images for different component\
+\'a0\'a0\'a0 if(section == 0 )//\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 imageName =\'a0 [dataSourceArrayForSection0 objectAtIndex:indexPath.row];//image for specific row for component0;\
+\'a0\'a0\'a0\'a0 if(section == 1 )//\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 imageName =\'a0 [dataSourceArrayForSection1 objectAtIndex:indexPath.row];//image for specific row for component1;\
+\'a0\'a0\'a0 if(section == 2 || section == 3 )//\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0 imageName =\'a0 [dataSourceArrayForSection2and3 objectAtIndex:indexPath.row];//image for specific row for component2and3;\
+\'a0\'a0\'a0\'a0 \
+\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0 //imageName if you selected Image for sotpped component.\
+\}\
+\
+Object Methods:-\
+-(void)spinComponentAtIndex:(NSInteger)index;\
+\'a0\'a0 // To spin specific component.\
+call it as [yourClass spinComponentAtIndex:componentIndex];\
+-(void)spinAllComponents;\
+// To spin all component.\
+call it as [yourClass spinAllComponents];\
+\
+When to play Sound:\
+[yourClass spinComponentAtIndex:componentIndex];\
+[yourClass spinAllComponents];\
+you can add sound play functionality before of after these functions.\
+\
+When to stop sound:\
+//you can write your stop code in this method\
+-(void)spinEndedWithIndexPath:(NSIndexPath *)indexPath\
+\{\
+\'a0\'a0\'a0 //As Check all component is ended or not so you can take a global int noOfStoppedComponent every time when you\'a0\'a0 start moving set it as 0 .\
+\'a0\'a0\'a0 noOfStoppedComponent++; //Increase each time when a component ended..\
+\'a0\'a0 if(noOfStoppedComponent == totalNoOfComponentYouReturnedFromFunction"noOfComponentsInPPSpinWheel")\
+\'a0\'a0 \{\
+\'a0\'a0\'a0\'a0\'a0\'a0 // Now all components ended moving\
+\'a0\'a0\'a0\'a0\'a0 // write your code to stop audio playing...\
+\
+\'a0\'a0 \}\
+\}\
+}

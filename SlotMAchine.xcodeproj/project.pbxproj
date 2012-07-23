@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6AE1EF115A9CC1A0073B6DC /* Slot.png in Resources */ = {isa = PBXBuildFile; fileRef = D6AE1EE515A9CC1A0073B6DC /* Slot.png */; };
+		D6AE1EF215A9CC1A0073B6DC /* SlotShading.png in Resources */ = {isa = PBXBuildFile; fileRef = D6AE1EE615A9CC1A0073B6DC /* SlotShading.png */; };
+		D6AE1EF315A9CC1A0073B6DC /* StartButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D6AE1EE715A9CC1A0073B6DC /* StartButton.png */; };
+		D6AE1EF415A9CC1A0073B6DC /* StartButtonActive.png in Resources */ = {isa = PBXBuildFile; fileRef = D6AE1EE815A9CC1A0073B6DC /* StartButtonActive.png */; };
+		D6AE1EF515A9CC1A0073B6DC /* StopBar.png in Resources */ = {isa = PBXBuildFile; fileRef = D6AE1EE915A9CC1A0073B6DC /* StopBar.png */; };
+		D6AE1EF615A9CC1A0073B6DC /* StopButton.png in Resources */ = {isa = PBXBuildFile; fileRef = D6AE1EEA15A9CC1A0073B6DC /* StopButton.png */; };
+		D6AE1EF715A9CC1A0073B6DC /* StopButtonActive.png in Resources */ = {isa = PBXBuildFile; fileRef = D6AE1EEB15A9CC1A0073B6DC /* StopButtonActive.png */; };
+		D6AE1EF815A9CC1A0073B6DC /* PPSpinWheelView.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AE1EED15A9CC1A0073B6DC /* PPSpinWheelView.m */; };
+		D6AE1EF915A9CC1A0073B6DC /* WheelSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = D6AE1EEF15A9CC1A0073B6DC /* WheelSpinner.m */; };
+		D6AE1EFA15A9CC1A0073B6DC /* WheelSpinner.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6AE1EF015A9CC1A0073B6DC /* WheelSpinner.xib */; };
+		D6B176D415AAAA6E00B32A3B /* 0.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B176CA15AAAA6E00B32A3B /* 0.png */; };
+		D6B176D515AAAA6E00B32A3B /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B176CB15AAAA6E00B32A3B /* 1.png */; };
+		D6B176D615AAAA6E00B32A3B /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B176CC15AAAA6E00B32A3B /* 2.png */; };
+		D6B176D715AAAA6E00B32A3B /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B176CD15AAAA6E00B32A3B /* 3.png */; };
+		D6B176D815AAAA6E00B32A3B /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B176CE15AAAA6E00B32A3B /* 4.png */; };
+		D6B176D915AAAA6E00B32A3B /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B176CF15AAAA6E00B32A3B /* 5.png */; };
+		D6B176DA15AAAA6E00B32A3B /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B176D015AAAA6E00B32A3B /* 6.png */; };
+		D6B176DB15AAAA6E00B32A3B /* 7.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B176D115AAAA6E00B32A3B /* 7.png */; };
+		D6B176DC15AAAA6E00B32A3B /* 8.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B176D215AAAA6E00B32A3B /* 8.png */; };
+		D6B176DD15AAAA6E00B32A3B /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B176D315AAAA6E00B32A3B /* 9.png */; };
+		D6B753B015A6A17300FA11BC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6B753AE15A6A17300FA11BC /* InfoPlist.strings */; };
+		D6B753B215A6A17300FA11BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B753B115A6A17300FA11BC /* main.m */; };
+		D6B753B615A6A17300FA11BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B753B515A6A17300FA11BC /* AppDelegate.m */; };
+		D6B753D115A6A21B00FA11BC /* imagegloss.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B753C315A6A21B00FA11BC /* imagegloss.png */; };
+		D6B753D415A6A21B00FA11BC /* SlotMachine.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B753C615A6A21B00FA11BC /* SlotMachine.png */; };
+		D6B753D615A6A21B00FA11BC /* Strip.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B753C915A6A21B00FA11BC /* Strip.png */; };
+		D6B7541B15A6B0AE00FA11BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B7541315A6B0AE00FA11BC /* UIKit.framework */; };
+		D6B7541C15A6B0AE00FA11BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B7541415A6B0AE00FA11BC /* Foundation.framework */; };
+		D6B7541D15A6B0AE00FA11BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B7541515A6B0AE00FA11BC /* CoreGraphics.framework */; };
+		D6B7541E15A6B0AE00FA11BC /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B7541615A6B0AE00FA11BC /* GameKit.framework */; };
+		D6B7541F15A6B0AE00FA11BC /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B7541715A6B0AE00FA11BC /* CoreAudio.framework */; };
+		D6B7542015A6B0AE00FA11BC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B7541815A6B0AE00FA11BC /* AVFoundation.framework */; };
+		D6B7542115A6B0AE00FA11BC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B7541915A6B0AE00FA11BC /* AudioToolbox.framework */; };
+		D6B7542215A6B0AE00FA11BC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B7541A15A6B0AE00FA11BC /* QuartzCore.framework */; };
+		D6B7542C15A6E7CC00FA11BC /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = D6B7542A15A6E7CB00FA11BC /* Test.m */; };
+		D6B7542D15A6E7CC00FA11BC /* Test.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6B7542B15A6E7CC00FA11BC /* Test.xib */; };
+		D6B7543315A7120C00FA11BC /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B7542E15A7120B00FA11BC /* apple.png */; };
+		D6B7543415A7120C00FA11BC /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B7542F15A7120C00FA11BC /* bar.png */; };
+		D6B7543515A7120C00FA11BC /* berry.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B7543015A7120C00FA11BC /* berry.png */; };
+		D6B7543615A7120C00FA11BC /* grap.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B7543115A7120C00FA11BC /* grap.png */; };
+		D6B7543715A7120C00FA11BC /* seven.png in Resources */ = {isa = PBXBuildFile; fileRef = D6B7543215A7120C00FA11BC /* seven.png */; };
+		D6E9D69315B520350013F43D /* 2012-07-16_1552.png in Resources */ = {isa = PBXBuildFile; fileRef = D6E9D69215B520350013F43D /* 2012-07-16_1552.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D6AE1EE315A9CC1A0073B6DC /* Constents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constents.h; sourceTree = "<group>"; };
+		D6AE1EE515A9CC1A0073B6DC /* Slot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Slot.png; sourceTree = "<group>"; };
+		D6AE1EE615A9CC1A0073B6DC /* SlotShading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SlotShading.png; sourceTree = "<group>"; };
+		D6AE1EE715A9CC1A0073B6DC /* StartButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartButton.png; sourceTree = "<group>"; };
+		D6AE1EE815A9CC1A0073B6DC /* StartButtonActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StartButtonActive.png; sourceTree = "<group>"; };
+		D6AE1EE915A9CC1A0073B6DC /* StopBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StopBar.png; sourceTree = "<group>"; };
+		D6AE1EEA15A9CC1A0073B6DC /* StopButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StopButton.png; sourceTree = "<group>"; };
+		D6AE1EEB15A9CC1A0073B6DC /* StopButtonActive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = StopButtonActive.png; sourceTree = "<group>"; };
+		D6AE1EEC15A9CC1A0073B6DC /* PPSpinWheelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPSpinWheelView.h; sourceTree = "<group>"; };
+		D6AE1EED15A9CC1A0073B6DC /* PPSpinWheelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPSpinWheelView.m; sourceTree = "<group>"; };
+		D6AE1EEE15A9CC1A0073B6DC /* WheelSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WheelSpinner.h; sourceTree = "<group>"; };
+		D6AE1EEF15A9CC1A0073B6DC /* WheelSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WheelSpinner.m; sourceTree = "<group>"; };
+		D6AE1EF015A9CC1A0073B6DC /* WheelSpinner.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WheelSpinner.xib; sourceTree = "<group>"; };
+		D6B176CA15AAAA6E00B32A3B /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0.png; sourceTree = "<group>"; };
+		D6B176CB15AAAA6E00B32A3B /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		D6B176CC15AAAA6E00B32A3B /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		D6B176CD15AAAA6E00B32A3B /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		D6B176CE15AAAA6E00B32A3B /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		D6B176CF15AAAA6E00B32A3B /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		D6B176D015AAAA6E00B32A3B /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		D6B176D115AAAA6E00B32A3B /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7.png; sourceTree = "<group>"; };
+		D6B176D215AAAA6E00B32A3B /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8.png; sourceTree = "<group>"; };
+		D6B176D315AAAA6E00B32A3B /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
+		D6B753A115A6A17300FA11BC /* SlotMAchine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlotMAchine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6B753AD15A6A17300FA11BC /* SlotMAchine-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SlotMAchine-Info.plist"; sourceTree = "<group>"; };
+		D6B753AF15A6A17300FA11BC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D6B753B115A6A17300FA11BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D6B753B315A6A17300FA11BC /* SlotMAchine-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlotMAchine-Prefix.pch"; sourceTree = "<group>"; };
+		D6B753B415A6A17300FA11BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D6B753B515A6A17300FA11BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D6B753C315A6A21B00FA11BC /* imagegloss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagegloss.png; sourceTree = "<group>"; };
+		D6B753C615A6A21B00FA11BC /* SlotMachine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SlotMachine.png; sourceTree = "<group>"; };
+		D6B753C915A6A21B00FA11BC /* Strip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Strip.png; sourceTree = "<group>"; };
+		D6B7541315A6B0AE00FA11BC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D6B7541415A6B0AE00FA11BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D6B7541515A6B0AE00FA11BC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D6B7541615A6B0AE00FA11BC /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		D6B7541715A6B0AE00FA11BC /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		D6B7541815A6B0AE00FA11BC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		D6B7541915A6B0AE00FA11BC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D6B7541A15A6B0AE00FA11BC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		D6B7542915A6E7CB00FA11BC /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		D6B7542A15A6E7CB00FA11BC /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
+		D6B7542B15A6E7CC00FA11BC /* Test.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Test.xib; sourceTree = "<group>"; };
+		D6B7542E15A7120B00FA11BC /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
+		D6B7542F15A7120C00FA11BC /* bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar.png; sourceTree = "<group>"; };
+		D6B7543015A7120C00FA11BC /* berry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = berry.png; sourceTree = "<group>"; };
+		D6B7543115A7120C00FA11BC /* grap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grap.png; sourceTree = "<group>"; };
+		D6B7543215A7120C00FA11BC /* seven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seven.png; sourceTree = "<group>"; };
+		D6E9D69215B520350013F43D /* 2012-07-16_1552.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2012-07-16_1552.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6B7539E15A6A17300FA11BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B7541B15A6B0AE00FA11BC /* UIKit.framework in Frameworks */,
+				D6B7541C15A6B0AE00FA11BC /* Foundation.framework in Frameworks */,
+				D6B7541D15A6B0AE00FA11BC /* CoreGraphics.framework in Frameworks */,
+				D6B7541E15A6B0AE00FA11BC /* GameKit.framework in Frameworks */,
+				D6B7541F15A6B0AE00FA11BC /* CoreAudio.framework in Frameworks */,
+				D6B7542015A6B0AE00FA11BC /* AVFoundation.framework in Frameworks */,
+				D6B7542115A6B0AE00FA11BC /* AudioToolbox.framework in Frameworks */,
+				D6B7542215A6B0AE00FA11BC /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6AE1EE215A9CC1A0073B6DC /* SpinWheel */ = {
+			isa = PBXGroup;
+			children = (
+				D6AE1EE315A9CC1A0073B6DC /* Constents.h */,
+				D6AE1EE415A9CC1A0073B6DC /* Graphics */,
+				D6AE1EEC15A9CC1A0073B6DC /* PPSpinWheelView.h */,
+				D6AE1EED15A9CC1A0073B6DC /* PPSpinWheelView.m */,
+				D6AE1EEE15A9CC1A0073B6DC /* WheelSpinner.h */,
+				D6AE1EEF15A9CC1A0073B6DC /* WheelSpinner.m */,
+				D6AE1EF015A9CC1A0073B6DC /* WheelSpinner.xib */,
+			);
+			path = SpinWheel;
+			sourceTree = "<group>";
+		};
+		D6AE1EE415A9CC1A0073B6DC /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				D6AE1EE515A9CC1A0073B6DC /* Slot.png */,
+				D6AE1EE615A9CC1A0073B6DC /* SlotShading.png */,
+				D6AE1EE715A9CC1A0073B6DC /* StartButton.png */,
+				D6AE1EE815A9CC1A0073B6DC /* StartButtonActive.png */,
+				D6AE1EE915A9CC1A0073B6DC /* StopBar.png */,
+				D6AE1EEA15A9CC1A0073B6DC /* StopButton.png */,
+				D6AE1EEB15A9CC1A0073B6DC /* StopButtonActive.png */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+		D6B7539615A6A17300FA11BC = {
+			isa = PBXGroup;
+			children = (
+				D6B753AB15A6A17300FA11BC /* SlotMAchine */,
+				D6B753A415A6A17300FA11BC /* Frameworks */,
+				D6B753A215A6A17300FA11BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6B753A215A6A17300FA11BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6B753A115A6A17300FA11BC /* SlotMAchine.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6B753A415A6A17300FA11BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6B7541315A6B0AE00FA11BC /* UIKit.framework */,
+				D6B7541415A6B0AE00FA11BC /* Foundation.framework */,
+				D6B7541515A6B0AE00FA11BC /* CoreGraphics.framework */,
+				D6B7541615A6B0AE00FA11BC /* GameKit.framework */,
+				D6B7541715A6B0AE00FA11BC /* CoreAudio.framework */,
+				D6B7541815A6B0AE00FA11BC /* AVFoundation.framework */,
+				D6B7541915A6B0AE00FA11BC /* AudioToolbox.framework */,
+				D6B7541A15A6B0AE00FA11BC /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6B753AB15A6A17300FA11BC /* SlotMAchine */ = {
+			isa = PBXGroup;
+			children = (
+				D6B753B415A6A17300FA11BC /* AppDelegate.h */,
+				D6B753B515A6A17300FA11BC /* AppDelegate.m */,
+				D6B7542915A6E7CB00FA11BC /* Test.h */,
+				D6B7542A15A6E7CB00FA11BC /* Test.m */,
+				D6B7542B15A6E7CC00FA11BC /* Test.xib */,
+				D6AE1EE215A9CC1A0073B6DC /* SpinWheel */,
+				D6B753C215A6A21B00FA11BC /* img */,
+				D6B753AC15A6A17300FA11BC /* Supporting Files */,
+			);
+			path = SlotMAchine;
+			sourceTree = "<group>";
+		};
+		D6B753AC15A6A17300FA11BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6B753AD15A6A17300FA11BC /* SlotMAchine-Info.plist */,
+				D6B753AE15A6A17300FA11BC /* InfoPlist.strings */,
+				D6B753B115A6A17300FA11BC /* main.m */,
+				D6B753B315A6A17300FA11BC /* SlotMAchine-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6B753C215A6A21B00FA11BC /* img */ = {
+			isa = PBXGroup;
+			children = (
+				D6B176CA15AAAA6E00B32A3B /* 0.png */,
+				D6B176CB15AAAA6E00B32A3B /* 1.png */,
+				D6B176CC15AAAA6E00B32A3B /* 2.png */,
+				D6B176CD15AAAA6E00B32A3B /* 3.png */,
+				D6B176CE15AAAA6E00B32A3B /* 4.png */,
+				D6B176CF15AAAA6E00B32A3B /* 5.png */,
+				D6B176D015AAAA6E00B32A3B /* 6.png */,
+				D6B176D115AAAA6E00B32A3B /* 7.png */,
+				D6B176D215AAAA6E00B32A3B /* 8.png */,
+				D6B176D315AAAA6E00B32A3B /* 9.png */,
+				D6E9D69215B520350013F43D /* 2012-07-16_1552.png */,
+				D6B7542E15A7120B00FA11BC /* apple.png */,
+				D6B7542F15A7120C00FA11BC /* bar.png */,
+				D6B7543015A7120C00FA11BC /* berry.png */,
+				D6B7543115A7120C00FA11BC /* grap.png */,
+				D6B7543215A7120C00FA11BC /* seven.png */,
+				D6B753C315A6A21B00FA11BC /* imagegloss.png */,
+				D6B753C615A6A21B00FA11BC /* SlotMachine.png */,
+				D6B753C915A6A21B00FA11BC /* Strip.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6B753A015A6A17300FA11BC /* SlotMAchine */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6B753BF15A6A17300FA11BC /* Build configuration list for PBXNativeTarget "SlotMAchine" */;
+			buildPhases = (
+				D6B7539D15A6A17300FA11BC /* Sources */,
+				D6B7539E15A6A17300FA11BC /* Frameworks */,
+				D6B7539F15A6A17300FA11BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlotMAchine;
+			productName = SlotMAchine;
+			productReference = D6B753A115A6A17300FA11BC /* SlotMAchine.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6B7539815A6A17300FA11BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = D6B7539B15A6A17300FA11BC /* Build configuration list for PBXProject "SlotMAchine" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D6B7539615A6A17300FA11BC;
+			productRefGroup = D6B753A215A6A17300FA11BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6B753A015A6A17300FA11BC /* SlotMAchine */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6B7539F15A6A17300FA11BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B753B015A6A17300FA11BC /* InfoPlist.strings in Resources */,
+				D6B753D115A6A21B00FA11BC /* imagegloss.png in Resources */,
+				D6B753D415A6A21B00FA11BC /* SlotMachine.png in Resources */,
+				D6B753D615A6A21B00FA11BC /* Strip.png in Resources */,
+				D6B7542D15A6E7CC00FA11BC /* Test.xib in Resources */,
+				D6B7543315A7120C00FA11BC /* apple.png in Resources */,
+				D6B7543415A7120C00FA11BC /* bar.png in Resources */,
+				D6B7543515A7120C00FA11BC /* berry.png in Resources */,
+				D6B7543615A7120C00FA11BC /* grap.png in Resources */,
+				D6B7543715A7120C00FA11BC /* seven.png in Resources */,
+				D6AE1EF115A9CC1A0073B6DC /* Slot.png in Resources */,
+				D6AE1EF215A9CC1A0073B6DC /* SlotShading.png in Resources */,
+				D6AE1EF315A9CC1A0073B6DC /* StartButton.png in Resources */,
+				D6AE1EF415A9CC1A0073B6DC /* StartButtonActive.png in Resources */,
+				D6AE1EF515A9CC1A0073B6DC /* StopBar.png in Resources */,
+				D6AE1EF615A9CC1A0073B6DC /* StopButton.png in Resources */,
+				D6AE1EF715A9CC1A0073B6DC /* StopButtonActive.png in Resources */,
+				D6AE1EFA15A9CC1A0073B6DC /* WheelSpinner.xib in Resources */,
+				D6B176D415AAAA6E00B32A3B /* 0.png in Resources */,
+				D6B176D515AAAA6E00B32A3B /* 1.png in Resources */,
+				D6B176D615AAAA6E00B32A3B /* 2.png in Resources */,
+				D6B176D715AAAA6E00B32A3B /* 3.png in Resources */,
+				D6B176D815AAAA6E00B32A3B /* 4.png in Resources */,
+				D6B176D915AAAA6E00B32A3B /* 5.png in Resources */,
+				D6B176DA15AAAA6E00B32A3B /* 6.png in Resources */,
+				D6B176DB15AAAA6E00B32A3B /* 7.png in Resources */,
+				D6B176DC15AAAA6E00B32A3B /* 8.png in Resources */,
+				D6B176DD15AAAA6E00B32A3B /* 9.png in Resources */,
+				D6E9D69315B520350013F43D /* 2012-07-16_1552.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6B7539D15A6A17300FA11BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6B753B215A6A17300FA11BC /* main.m in Sources */,
+				D6B753B615A6A17300FA11BC /* AppDelegate.m in Sources */,
+				D6B7542C15A6E7CC00FA11BC /* Test.m in Sources */,
+				D6AE1EF815A9CC1A0073B6DC /* PPSpinWheelView.m in Sources */,
+				D6AE1EF915A9CC1A0073B6DC /* WheelSpinner.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D6B753AE15A6A17300FA11BC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6B753AF15A6A17300FA11BC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6B753BD15A6A17300FA11BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D6B753BE15A6A17300FA11BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6B753C015A6A17300FA11BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlotMAchine/SlotMAchine-Prefix.pch";
+				INFOPLIST_FILE = "SlotMAchine/SlotMAchine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D6B753C115A6A17300FA11BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlotMAchine/SlotMAchine-Prefix.pch";
+				INFOPLIST_FILE = "SlotMAchine/SlotMAchine-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6B7539B15A6A17300FA11BC /* Build configuration list for PBXProject "SlotMAchine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B753BD15A6A17300FA11BC /* Debug */,
+				D6B753BE15A6A17300FA11BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6B753BF15A6A17300FA11BC /* Build configuration list for PBXNativeTarget "SlotMAchine" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6B753C015A6A17300FA11BC /* Debug */,
+				D6B753C115A6A17300FA11BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6B7539815A6A17300FA11BC /* Project object */;
+}
